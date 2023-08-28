@@ -1,5 +1,5 @@
 output "bimbo_vpc"{
-    value=aws_vpc.bimbo_vpc
+    value=aws_vpc.checkpoint_vpc
 }
 
 output "bimbo_subnet1"{
