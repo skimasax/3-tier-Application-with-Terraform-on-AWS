@@ -1,11 +1,10 @@
-output "bimbo_vpc"{
-    value=aws_vpc.checkpoint_vpc
+output "static_vpc"{
+    value=aws_vpc.static_vpc
 }
-
-output "bimbo_subnet1"{
-    value=aws_subnet.public_subnet1
+output "publicsubnet"{
+    value=aws_subnet.public_subnet
 }
-
-output "bimbo_subnet2"{
-    value=aws_subnet.public_subnet2
+# Output the ALB DNS name
+output "alb_dns_name" {
+  value = aws_lb.static_alb.dns_name
 }
